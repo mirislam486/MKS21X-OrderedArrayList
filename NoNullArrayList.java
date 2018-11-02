@@ -15,4 +15,15 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     ArrPlus[arr.length - 1] = element;
     return true;
   }
+
+
+  public E set(int index, E element){
+    oldEl = arr[index]
+    if(index > arr.length){
+      throw new IndexOutOfBoundException;
+    }
+    arr[index] = element;
+    System.out.println(oldEl);
+    }
+  }
 }
